@@ -75,6 +75,10 @@
       padding: 30px;
     }
 
+    .text {
+      color: var(--main-text-color);
+    }
+
     .pc {
       font-size: 1.5rem;
       margin: 50px 0;
@@ -85,11 +89,12 @@
     }
 
     .quote quote {
-      font-size: 1.5rem;
+      font-size: 1.4rem;
+      color: var(--main-color);
     }
 
     .quote p {
-      font-size: .9rem;
+      font-size: .8rem;
       margin-right: 30px;
       text-align: end;
     }
@@ -98,6 +103,10 @@
       width: 150px;
       height: auto;
       margin-left: 50px;
+    }
+
+    #signature-name {
+      display: block;
       margin-bottom: 100px;
     }
   </style>
@@ -128,7 +137,7 @@
       storm.” Finally, wearing the Temple T on my gown I received my diploma and for the rest of my life became a Temple
       alumni. God, did I wear that letter proudly that day.
     </p>
-    <p>
+    <p class="pc">
       That was 392 days ago. Today, on my morning run I put on, as always, a grey long sleeve with the big white Temple
       T. Tomorrow, I won’t.
     </p>
@@ -142,8 +151,17 @@
       learned to use my voice, to call out and address issues that I see. Freshman year, my HR professor made us sign
       every test we handed in. Putting our signature on that sheet of paper and associating it with our name made us
       realize that this test was important. That the words on it mattered. It should ensure that we put thought and
-      effort
-      into our responses. My name will forever be associated with Temple University. And those tweets lacked both the
+      effort into our responses.</p>
+    <div class="quote">
+      <quote>
+        Respect for others requires a complicated calculation in which one party agrees to moderate their own desires to
+        consider the long-term consequences of their own behavior, to think about something other than the thing right
+        in front of them.
+      </quote>
+      <p>Malcolm Gladwell, Talking to Strangers</p>
+    </div>
+    <p>
+      My name will forever be associated with Temple University. And those tweets lacked both the
       thought and empathy that I expect from myself and the organizations I am associated with.
     </p>
     <p>
@@ -156,12 +174,6 @@
     </p>
     <div class="quote">
       <quote>
-        There is no in-between safe space of “not racist.” The claim of “not racist” neutrality is a mask for racism.”
-      </quote>
-      <p>Ibram X. Kendi, How to Be an Antiracist</p>
-    </div>
-    <div class="quote">
-      <quote>
         “What’s the problem with being “not racist”? It is a claim that signifies neutrality: “I am not a racist, but
         neither am I aggressively against racism.” But there is no neutrality in the racism struggle. The opposite of
         “racist” isn’t “not racist.” It is “antiracist.”
@@ -171,47 +183,23 @@
     <p>
       Following up this tweet by stating that recognizing does not mean blablabla, seemingly lecturing outraged
       students, alumni and antiracist owls in a tweet of 163 characters is not a worthy response.
-
       If I imagine the disappointment and betrayal I felt as a privileged white male alumni I cannot imagine how our
       students and alumni of color, our students and alumni that are gay or transsexual have felt. We proudly claim to
       be a safe space and place of inclusion. A place where people come together and minorities are celebrated in their
       diversity and can flourish in symbiosis with the majority. How can we say that when you fail to stand up for them
       when they need it most.
     </p>
-
-    <p>
-      Following up this tweet by stating that recognizing does not mean blablabla, seemingly lecturing outraged
-      students, alumni and antiracist owls in a tweet of 163 characters is not a worthy response.
-
-      If I imagine the disappointment and betrayal I felt as a privileged white male alumni I cannot imagine how our
-      students and alumni of color, our students and alumni that are gay or transsexual have felt. We proudly claim to
-      be a safe space and place of inclusion. A place where people come together and minorities are celebrated in their
-      diversity and can flourish in symbiosis with the majority. How can we say that when you fail to stand up for them
-      when they need it most.
-    </p>
-
-    <div class="quote">
-      <quote>
-        Respect for others requires a complicated calculation in which one party agrees to moderate their own desires to
-        consider the long-term consequences of their own behavior, to think about something other than the thing right
-        in front of them.
-      </quote>
-      <p>Malcolm Gladwell</p>
-    </div>
-
     <div class="quote">
       <quote>
         Now it is our time to be The Who that makes the positive difference we want to see in this world.
       </quote>
-      <p>Vanessa Gabrielle Chandler</p>
+      <p>Vanessa Gabrielle Chandler, Student Spekaer at Temple's 154 Commencement</p>
     </div>
-
     <p>
       Now it is the time to speak up and make known that we are anti racists, as individuals, as institutions, as
       students, as professors, as deans, as presidents, as owls. You need to address this issue in an appropriate and
       sincere manner, not a 163 character long tweet. We all deserve better.
     </p>
-
     <p class="pc">Preserverence conquers,</p>
     <svg id="signature" width="300" height="220" viewBox="0 0 300 220" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path
@@ -221,9 +209,10 @@
         d="M45.6628 64.2019C45.4153 63.6165 45.6531 65.4757 45.5628 66.1048C45.2055 68.6087 44.3075 71.2369 43.423 73.5951C41.5356 78.6271 39.8619 83.8436 38.6075 89.1116C33.9822 108.536 25.5871 126.197 18.2754 144.755C16.8153 148.462 4.54536 177.574 3.82982 176.858C3.22594 176.254 15.6628 154.797 20.9512 144.22C38.5667 108.989 59.6657 76.1544 79.2706 42.0281C87.4968 27.7077 100.545 1.49899 104.417 3.50482C109.169 5.96695 94.8182 33.3213 93.1813 36.6776C77.6803 68.4543 59.6017 99.1641 45.0279 131.38C43.3386 135.114 30.291 164.178 33.792 167.762C39.6056 173.715 54.7143 154.639 57.3337 151.712C79.9463 126.439 90.4619 95.8058 104.417 65.5699C108.978 55.6883 109.063 56.0951 112.977 46.3087C114.467 42.5874 115.991 38.8747 117.258 35.0728C117.51 34.3155 118.328 32.1349 118.328 32.932C118.328 44.9029 106.417 63.0136 101.742 73.5951C91.2988 97.2301 82.2502 121.447 72.3153 145.29C70.6745 149.228 60.1279 174.401 64.289 175.788C73.1318 178.736 78.6356 158.182 85.156 154.921C85.8822 154.558 90.3405 160.835 93.7162 160.272C99.489 159.31 103.333 154.657 108.698 153.316C111.983 152.495 113.773 156.261 117.793 154.921"
         stroke="white" stroke-width="6" stroke-miterlimit="1.5" stroke-linecap="round" stroke-linejoin="round" />
     </svg>
+    <small id="signature-name">Robin Goetz, Temple Class of 2019. Antiracist.</small>
 
     <h1>JOIN ME AND <span id="emailssent">MANY</span> FELLOW OWLS and send an email to president englert</h1>
-    <h1>I <input id="name" type="text">, demand Temple to address this issue.</h1>
+    <h1 class='text'>I <input id="name" type="text">, demand Temple to address this issue.</h1>
     <h1><a href="#" id="emailbutton" onclick="clicked()">Send an email now</a></h1>
 
   </div>
