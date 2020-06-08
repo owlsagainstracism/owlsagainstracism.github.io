@@ -177,15 +177,15 @@
               var email = 'test@theearth.com';
               var subject = 'I ' + name + ', want you to address the tweets of the official Temple University twitter account in response to Temple students using racist slurs';
               var emailBody =
-                'Dear President Englert,%3C%2Fbr%3E' +
+                'Dear President Englert,</br>' +
                 'I am joining my fellow Owls in demanding an appropriate and thoughtful response to the tweets of the ' +
                 'Temple University Twitter account in response to students using racist slurs.' +
                 'Many students feel betrayed and not welcome anymore as Temple seems to be hiding behind the argument of freedom of speech instead of taking an antiracist stand. ' +
                 ' The follow up tweet that states that Temple does not condone racism is not adequate. 163 characters are not enough' +
                 'to address a subject that is so complicated, especially in the current political and emotional environment in the United States.' +
-                'We demand communication that is specific, nuonced and timely. We are all Owls. Do not fail us.%3C%2Fbr%3E' +
-                ' Preserverence conquers,%3C%2Fbr%3E' + name;
-              window.location = 'mailto:' + email + '?subject=' + subject + '&body=' + emailBody;
+                'We demand communication that is specific, nuonced and timely. We are all Owls. Do not fail us.</br>' +
+                ' Preserverence conquers,</br>' + name;
+              window.location = 'mailto:' + email + '?subject=' + subject + '&body=' + encodeURI(emailBody);
             });
         }
       });
