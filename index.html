@@ -75,9 +75,23 @@
       padding: 30px;
     }
 
-    #pc {
+    .pc {
       font-size: 1.5rem;
       margin: 50px 0;
+    }
+
+    .quote {
+      margin: 75px 10px;
+    }
+
+    .quote quote {
+      font-size: 1.5rem;
+    }
+
+    .quote p {
+      font-size: .9rem;
+      margin-right: 30px;
+      text-align: end;
     }
 
     #signature {
@@ -102,7 +116,7 @@
   </svg>
   <h1 id="headline">An Open Letter to President Englert</h1>
   <div class="main-content">
-    <p>Dear President Englert,</p>
+    <p class="pc">Dear President Englert,</p>
     <p>
       Today I am writing you as a fellow Owl, a fellow Temple Alumni, a fellow privileged white male.
       It was May 11th 2019, when I sat in one of the rows of cherry chairs lined up for the 154 Commencement of Temple
@@ -140,27 +154,19 @@
       in a democracy and we should always make it a priority to protect it. However, the freedom to voice your views
       freely is not equal to the freedom to voice your views free of all consequences.
     </p>
-    <p>
-      Temple prides itself as being committed to building a diverse educational community, appreciation of others, open
-      mindedness and respect. It claims that its policies, practices and programs exemplify our commitment. Publicly
-      reinforcing that we “respect first amendment rights of all including those that express unpopular and hateful
-      speech that…” is contrary to all these claims. Do not get me wrong, freedom of speech is one of the highest goods
-      in a democracy and we should always make it a priority to protect it. However, the freedom to voice your views
-      freely is not equal to the freedom to voice your views free of all consequences.
-    </p>
-    <div>
+    <div class="quote">
       <quote>
         There is no in-between safe space of “not racist.” The claim of “not racist” neutrality is a mask for racism.”
       </quote>
-      <p>― Ibram X. Kendi, How to Be an Antiracist</p>
+      <p>Ibram X. Kendi, How to Be an Antiracist</p>
     </div>
-    <div>
+    <div class="quote">
       <quote>
         “What’s the problem with being “not racist”? It is a claim that signifies neutrality: “I am not a racist, but
         neither am I aggressively against racism.” But there is no neutrality in the racism struggle. The opposite of
         “racist” isn’t “not racist.” It is “antiracist.”
       </quote>
-      <p>― Ibram X. Kendi, How to Be an Antiracist</p>
+      <p>Ibram X. Kendi, How to Be an Antiracist</p>
     </div>
     <p>
       Following up this tweet by stating that recognizing does not mean blablabla, seemingly lecturing outraged
@@ -184,24 +190,29 @@
       when they need it most.
     </p>
 
-    <div>
+    <div class="quote">
       <quote>
         Respect for others requires a complicated calculation in which one party agrees to moderate their own desires to
         consider the long-term consequences of their own behavior, to think about something other than the thing right
         in front of them.
       </quote>
-      <p>― Malcolm Gladwell</p>
+      <p>Malcolm Gladwell</p>
+    </div>
+
+    <div class="quote">
+      <quote>
+        Now it is our time to be The Who that makes the positive difference we want to see in this world.
+      </quote>
+      <p>Vanessa Gabrielle Chandler</p>
     </div>
 
     <p>
-      Now it is our time to be The Who that makes the positive difference we want to see in this world.
-
       Now it is the time to speak up and make known that we are anti racists, as individuals, as institutions, as
       students, as professors, as deans, as presidents, as owls. You need to address this issue in an appropriate and
       sincere manner, not a 163 character long tweet. We all deserve better.
     </p>
 
-    <p id="pc">Preserverence conquers,</p>
+    <p class="pc">Preserverence conquers,</p>
     <svg id="signature" width="300" height="220" viewBox="0 0 300 220" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path
         d="M217.023 67.049C215.777 68.3578 221.203 67.0646 222.239 65.585C224.589 62.2277 227.138 58.152 228.66 54.349C232.196 45.5073 239.959 18.9083 220.634 23.852C193.49 30.7957 183.913 72.3248 183.181 95.0121C182.952 102.115 180.705 116.823 187.247 122.275C202.786 135.224 226.038 93.8694 229.729 84.8461C231.8 79.784 233.397 74.684 234.545 69.3306C234.919 67.5859 235.806 62.7189 234.545 63.9801C225.301 73.2238 222.701 96.4539 219.029 108.388C210.968 134.586 201.773 161.143 190.136 185.968C188.517 189.425 175.005 222.231 167.13 215.931C159.747 210.025 166.506 193.28 168.735 187.039C176.829 164.374 186.994 137.327 214.214 134.605C221.201 133.906 226.618 128.982 232.405 125.509C232.707 125.328 234.714 124.425 235.08 124.974C238.741 130.466 227.291 151.349 222.239 147.981C216.205 143.958 230.928 123.904 236.15 123.904C236.876 123.904 242.908 131.254 243.641 129.79C245.452 126.167 237.909 130.018 236.685 132.465C235.496 134.841 230.545 146.817 238.291 144.235C254.08 138.972 272.245 95.216 278.418 81.6364C281.934 73.9014 281.709 74.1179 284.838 66.1199C286.545 61.7597 286.281 62.1656 288.584 57.5597C288.836 57.0549 289.119 55.3898 289.119 55.9539C289.119 73.4607 274.178 102.909 268.788 120.159C268.374 121.481 263.157 142.631 261.832 142.631C260.923 142.631 261.397 140.86 261.296 139.956C261.113 138.302 262.552 116.857 257.017 119.624C252.451 121.906 261.016 127.349 262.902 127.649C268.162 128.487 274.186 123.699 277.883 120.694C282.478 116.961 285.877 112.852 289.654 108.388C292.739 104.741 296.269 100.41 296.074 100.898C294.72 104.285 291.492 107.404 289.654 110.529C287.892 113.524 272.756 135.887 284.303 133C287.2 132.275 291.217 130.901 293.399 128.72"
