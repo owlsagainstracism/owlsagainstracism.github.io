@@ -84,6 +84,7 @@
       width: 150px;
       height: auto;
       margin-left: 50px;
+      margin-bottom: 100px;
     }
   </style>
 </head>
@@ -173,7 +174,7 @@
               $('#emailssent').text(data.value);
               disabled = true;
               setTimeout(function () { disabled = false; }, 30000);
-              var name = encodeURIComponent($('#name').val()) ? encodeURIComponent($('#name').val()) : 'a fellow Owl';
+              var name = $('#name').val() ? $('#name').val() : 'a fellow Owl';
               var email = 'test@theearth.com';
               var subject = 'I ' + name + ', want you to address the tweets of the official Temple University twitter account in response to Temple students using racist slurs';
               var emailBody =
@@ -184,8 +185,8 @@
                 ' The follow up tweet that states that Temple does not condone racism is not adequate. 163 characters are not enough' +
                 'to address a subject that is so complicated, especially in the current political and emotional environment in the United States.' +
                 'We demand communication that is specific, nuonced and timely. We are all Owls. Do not fail us.\r\n' +
-                ' Preserverence conquers,\r\n' + name;
-              window.location = 'mailto:' + email + '?subject=' + subject + '&body=' + encodeURIComponent(emailBody);
+                'Preserverence conquers,\r\n' + name;
+              window.location = 'mailto:' + email + '?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(emailBody);
             });
         }
       });
