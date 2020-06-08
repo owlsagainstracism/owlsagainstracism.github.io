@@ -11,8 +11,8 @@
   <meta name="author" content="Robin Goetz">
   <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/base-min.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href='http://fonts.googleapis.com/css?family=Ubuntu:bold' rel='stylesheet' type='text/css'>
-  <link href='http://fonts.googleapis.com/css?family=Vollkorn' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Ubuntu:bold' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Vollkorn' rel='stylesheet' type='text/css'>
   <style>
     :root {
       --main-color: #F8F026;
@@ -173,9 +173,9 @@
               $('#emailssent').text(data.value);
               disabled = true;
               setTimeout(function () { disabled = false; }, 30000);
-              console.log($('#name').val());
+              var name = encodeURI($('#name').val()) ? encodeURI($('#name').val()) : 'a fellow Owl';
               var email = 'test@theearth.com';
-              var subject = 'I ' + uriEncode($('#name').val()) + ', want you to address the tweets of the official Temple University twitter account in response to Temple students using racist slurs';
+              var subject = 'I ' + name + ', want you to address the tweets of the official Temple University twitter account in response to Temple students using racist slurs';
               var emailBody =
                 'Dear President Englert,%3C%2Fbr%3E' +
                 'I am joining my fellow Owls in demanding an appropriate and thoughtful response to the tweets of the ' +
@@ -184,7 +184,7 @@
                 ' The follow up tweet that states that Temple does not condone racism is not adequate. 163 characters are not enough' +
                 'to address a subject that is so complicated, especially in the current political and emotional environment in the United States.' +
                 'We demand communication that is specific, nuonced and timely. We are all Owls. Do not fail us.%3C%2Fbr%3E' +
-                ' Preserverence conquers,%3C%2Fbr%3E' + uriEncode($('#name').val());
+                ' Preserverence conquers,%3C%2Fbr%3E' + name;
               window.location = 'mailto:' + email + '?subject=' + subject + '&body=' + emailBody;
             });
         }
