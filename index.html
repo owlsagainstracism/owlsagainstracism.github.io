@@ -45,6 +45,7 @@
 		border-bottom: 2px solid var(--main-color);
 		outline: none;
 		max-width: 200px;
+		border-radius: 0;
 	}
 	
 	#logo {
@@ -139,7 +140,7 @@
 					var emailBody = 'Dear President Englert,<br> I, '+ $('#name').val() +', am joining my fellow Owls in demanding an appropriate and thoughtful response to the tweets of the Temple University Twitter account in response to students using racist slurs.' +
 					'Many students feel betrayed and not welcome anymore as Temple seems to be hiding behind the argument of freedom of speech instead of taking an antiracist stand. The follow up tweet that states that Temple does not condone racism is not adequate. 163 characters are not enough' +
 					'to address a subject that is so complicated, especially in the current political and emotional environment in the United States. We demand communication that is specific, nuonced and timely. We are all Owls. Do not fail us.<br> Preserverence conquers, <br> ' + $('#name').val();
-					window.location = 'mailto:' + email + '?subject=' + subject + '&body=' + emailBody;
+					window.location = 'mailto:' + email + '?subject=' + encodeURI(subject) + '&body=' + encodeURI(emailBody);
 					});
 			}
 		});
